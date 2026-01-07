@@ -50,9 +50,6 @@ function injectSummarizer() {
             const summaryBox = document.createElement('div');
             summaryBox.id = 'ai-summary-content';
             summaryBox.className = 'ai-summary-box';
-
-            // ⚠️ KEY CHANGE: Parse Markdown to HTML
-            // 'marked.parse' comes from the library we added
             summaryBox.innerHTML = marked.parse(summaryText);
 
             btn.parentNode.insertBefore(summaryBox, btn.nextSibling);
