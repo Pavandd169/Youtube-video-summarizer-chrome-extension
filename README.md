@@ -1,3 +1,11 @@
 # Youtube-video-summarizer-chrome-extension
+## How to Use
 
-uvicorn api.main:app --reload
+### Backend (required)
+docker run -p 8000:8000 youtube-video-summarizer-chrome-extension
+
+### Chrome Extension
+1. Open chrome://extensions
+2. Enable Developer Mode
+3. Click "Load unpacked"
+4. Select the `extension/` folder
