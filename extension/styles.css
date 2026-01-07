@@ -45,8 +45,6 @@ html[dark] .ai-summary-box {
     color: #f1f1f1;
 }
 
-/* ⚠️ NEW: Markdown Element Styling */
-
 /* Make headings bold and add space */
 .ai-summary-box h1, 
 .ai-summary-box h2, 

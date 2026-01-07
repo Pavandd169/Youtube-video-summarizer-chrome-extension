@@ -2,7 +2,8 @@
 ## How to Use
 
 ### Backend (required)
-docker run -p 8000:8000 youtube-video-summarizer-chrome-extension
+docker pull pavandd1/youtube-video-summarizer-chrome-extension
+docker run -p 8000:8000 pavandd1/youtube-video-summarizer-chrome-extension
 
 ### Chrome Extension
 1. Open chrome://extensions
