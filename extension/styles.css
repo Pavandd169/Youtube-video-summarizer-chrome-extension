@@ -27,19 +27,55 @@
 
 /* The Summary Result Box */
 .ai-summary-box {
-    background-color: rgba(0, 0, 0, 0.05); /* Works for light mode */
+    background-color: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 15px;
     font-family: "Roboto", sans-serif;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: var(--yt-spec-text-primary); /* Uses YouTube's native text color */
+    color: var(--yt-spec-text-primary);
+    line-height: 1.6;
+    font-size: 14px;
 }
 
-/* Dark mode adjustment if YouTube is in dark mode */
+/* Dark mode support */
 html[dark] .ai-summary-box {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
+}
+
+/* ⚠️ NEW: Markdown Element Styling */
+
+/* Make headings bold and add space */
+.ai-summary-box h1, 
+.ai-summary-box h2, 
+.ai-summary-box h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+}
+
+/* Remove margin from top heading if it's first */
+.ai-summary-box h1:first-child,
+.ai-summary-box h2:first-child {
+    margin-top: 0;
+}
+
+/* Style the bold text */
+.ai-summary-box strong {
+    font-weight: 700;
+    color: inherit; /* Keeps dark mode working */
+}
+
+/* Clean up lists */
+.ai-summary-box ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.ai-summary-box li {
+    margin-bottom: 6px;
 }
