@@ -1,0 +1,45 @@
+/* The Summarize Button */
+.ai-summary-btn {
+    background-color: #3ea6ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ai-summary-btn:hover {
+    background-color: #2683d6;
+}
+
+.ai-summary-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* The Summary Result Box */
+.ai-summary-box {
+    background-color: rgba(0, 0, 0, 0.05); /* Works for light mode */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--yt-spec-text-primary); /* Uses YouTube's native text color */
+}
+
+/* Dark mode adjustment if YouTube is in dark mode */
+html[dark] .ai-summary-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
